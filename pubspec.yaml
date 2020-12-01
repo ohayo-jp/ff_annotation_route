@@ -4,10 +4,10 @@ version: 4.2.2
 homepage: https://github.com/fluttercandies/ff_annotation_route
 
 environment:
-  sdk: '>=2.6.0 <3.0.0'
+  sdk: ">=2.6.0 <3.0.0"
 
 dependencies:
-  analyzer: ^0.39.11
+  analyzer: ^0.40.6
   args: ^1.6.0
   dart_style: ^1.3.6
   io: ^0.3.3
@@ -17,6 +17,5 @@ dependencies:
 
 executables:
   ff_route: main
-
- # pub global activate --source path ./
- # pub global activate ff_annotation_route
+  # pub global activate --source path ./
+  # pub global activate ff_annotation_route
