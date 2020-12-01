@@ -167,7 +167,7 @@ Route<dynamic> onGenerateRouteHelper(
   if (routeResult.showStatusBar != null || routeResult.routeName != null) {
     settings = FFRouteSettings(
       name: settings.name,
-      ${routeSettingsNoIsInitialRoute ? '' : 'isInitialRoute:settings.isInitialRoute,'}
+      ${routeSettingsNoIsInitialRoute ? '' : '// isInitialRoute:settings.isInitialRoute,'}
       routeName: routeResult.routeName,
       ${routeSettingsNoArguments ? '' : 'arguments: arguments as Map<String, dynamic>,'}
       showStatusBar: routeResult.showStatusBar,
@@ -238,7 +238,7 @@ class FFRouteSettings extends RouteSettings {
     ${routeSettingsNoIsInitialRoute ? '' : 'bool isInitialRoute = false,'}
   }) : super(
           name: name,
-          ${routeSettingsNoIsInitialRoute ? '' : 'isInitialRoute:isInitialRoute,'}
+          ${routeSettingsNoIsInitialRoute ? '' : '// isInitialRoute:isInitialRoute,'}
           ${routeSettingsNoArguments ? '' : 'arguments:arguments,'}
         );
 
